@@ -8,3 +8,11 @@ class Home(ListAPIView):
     queryset=Item.objects.all()
     serializer_class=ItemSerializer
     
+class CreateView(CreateAPIView):
+    queryset=Item.objects.all()
+    serializer_class=ItemSerializer
+
+class DeleteView(DestroyAPIView):
+    queryset=Item.objects.all()
+    serializer_class=ItemSerializer
+            
