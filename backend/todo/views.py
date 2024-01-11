@@ -15,4 +15,5 @@ class CreateView(CreateAPIView):
 class DeleteView(DestroyAPIView):
     queryset=Item.objects.all()
     serializer_class=ItemSerializer
+    
             
