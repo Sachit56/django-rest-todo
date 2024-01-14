@@ -124,6 +124,7 @@ STATIC_URL = 'static/'
 CORS_ALLOWED_ORIGINS = [
     'https://timely-gecko-a66103.netlify.app',
     'http://timely-gecko-a66103.netlify.app'
+    
 
 ]
 # Default primary key field type
