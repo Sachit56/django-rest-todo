@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-x9sopxw)3$_2rl+4@09d9ja)m)%lm1u@56wkg^i&sj+q*(2rc9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sachit56.pythonanywhere.com','localhost']
 
 
 # Application definition
@@ -119,8 +119,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
+import os
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 CORS_ALLOWED_ORIGINS = [
     'https://timely-gecko-a66103.netlify.app',
