@@ -125,8 +125,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 CORS_ALLOWED_ORIGINS = [
-    'https://timely-gecko-a66103.netlify.app',
-    'http://timely-gecko-a66103.netlify.app'
+    # 'https://timely-gecko-a66103.netlify.app',
+    'http://localhost:3001'
     
 
 ]
